@@ -1,2 +1,59 @@
 # SguanQT_Demo
-One repository for storing the PC serial port software I wrote, developed using QT Creator in C language.
+
+开发的一个用于FOC电机控制上位机串口软件的代码仓库，使用QT Creator和C++语言开发。
+
+## 📌 项目简介
+
+**SguanQT上位机v1.0（beta_code版本）**  
+本项目是一个基于QT框架的串口通信上位机软件，目前版本支持基础的串口通信功能，未来将持续更新迭代，目标是打造一款高性能的电机控制上位机软件。
+
+## ✨ 主要功能
+
+- **串口通信**：支持常见的波特率（9600 ~ 1152000）
+- **实时收发**：发送文本数据并实时接收显示
+- **端口管理**：动态刷新可用串口，支持打开/关闭操作
+- **界面友好**：简洁直观的UI布局，状态指示灯提示
+- **多语言支持**：内置国际化翻译框架（当前支持中文）
+
+## 🛠 技术栈
+
+- **开发框架**：QT 6.x / 5.x
+- **编程语言**：C++ 17
+- **核心模块**：QSerialPort, QWidgets
+- **构建工具**：qmake / CMake
+
+## 📁 项目结构
+
+```
+SguanQT_Demo/
+├── main.cpp              # 程序入口，初始化应用与多语言
+├── mainwindow.h          # 主窗口类声明
+├── mainwindow.cpp        # 主窗口逻辑实现（串口操作、事件处理）
+├── mainwindow.ui         # 主窗口界面设计文件
+└── test_DemoCode.pro     # 项目配置文件
+```
+
+## 🚀 快速开始
+
+### 环境要求
+- QT Creator（建议6.x以上）
+- 支持C++17的编译器
+- Windows / Linux / macOS（跨平台支持）
+
+### 编译运行
+1. 使用QT Creator打开 `test_DemoCode.pro`
+2. 配置构建套件（Kit）
+3. 点击“构建并运行”
+
+## 📧 联系作者
+
+- **作者**：星必尘Sguan  
+- **邮箱**：3464647102@qq.com
+
+## 📄 开源许可
+
+本项目遵循开源协议，欢迎学习、使用与二次开发。
+
+---
+
+> 本项目将持续更新，逐步增强为功能完整的电机控制上位机平台，敬请期待后续版本！
