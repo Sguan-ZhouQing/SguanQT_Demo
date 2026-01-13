@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="led">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LED</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>-10</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>星必尘Sguan-&gt;串口助手</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_open">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>150</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开串口</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_refresh">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>180</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>刷新串口</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>381</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>210</y>
+      <width>381</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_com">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>50</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_speed">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>110</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>9600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>19200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>38400</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>57600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>115200</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>921600</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>1152000</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>30</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>端口选择：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>波特率：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_tx">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>210</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_clear">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>250</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>清除文本</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="key_rx_clear">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>240</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>clear</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>84</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
